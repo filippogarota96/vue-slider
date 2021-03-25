@@ -14,17 +14,17 @@
   <div id="app">
     <div class="carousel-wrapper">
       <div class="carousel">
-        <div class="prev-image">
+        <div @click='prevImage' class="prev-image">
           <i class="fas fa-chevron-left"></i>
         </div>
         <div class="images-container">
-          <img v-bind:src="images[0]" alt="">
+          <img v-bind:src="images[imgIndex]" alt="">
         </div>
-        <div class="next-image">
+        <div @click="nextImage" class="next-image">
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="bullets">
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle" v-for ="image in images"></i>
         </div>
       </div>
   </div>
