@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.carousel {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.images-container img {
+  width: 100%;
+}
+
+.carousel i {
+  font-size: 40px;
+}
+.prev-image,.next-image {
+  padding: 0 20px;
+}
+
+.bullets  {
+  font-size: 20px;
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bullets i {
+  font-size: 20px;
+}
